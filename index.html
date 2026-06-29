@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music AI Chatbot</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="chat-container">
+
+        <!-- Header with music icon -->
+        <div class="header-row">
+            <h2>🎵 Music AI Chatbot</h2>
+
+            <!-- Light/Dark mode toggle -->
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+
+        <!-- Chat messages -->
+        <div id="chat-box" class="chat-box"></div>
+
+        <!-- Typing indicator -->
+        <div id="typing-indicator" class="typing hidden">
+            Bot is thinking<span class="dots">...</span>
+        </div>
+
+        <!-- Input area -->
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask for music recommendations..." />
+            <button id="send-btn">Send</button>
+            <button id="clear-btn" class="clear">Clear</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
